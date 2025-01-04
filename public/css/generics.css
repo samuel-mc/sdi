@@ -1,12 +1,12 @@
 :root {
-    --dark-blue: #0B0D39;
     --medium-blue: #306DB6;
     --light-blue: #E2EFFF;
-
+    
     --grey: #637381;
     --light-grey: #D4D2E3;
     --white-input: #F9F9FF;
-
+    
+    --dark-blue: #081642;
     --blue: #3636D8;
     --yellow: #E39228;
 
@@ -143,6 +143,19 @@ a {
     transition: background-color 0.3s ease-in-out;
 }
 
+.btn--white {
+    background-color: white !important;
+    color: var(--dark-blue) !important;
+    border: 1px solid var(--dark-blue) !important;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.btn--white:hover {
+    background-color: var(--dark-blue) !important;
+    color: white !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
 .grid--2cols {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -168,8 +181,10 @@ a {
     gap: 12px;
 }
 
-.grid{
+.grid--6rows {
     display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 12px;
 }
 
 .gap--24 {
