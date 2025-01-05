@@ -18,6 +18,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- Splide -->
+    <link rel="stylesheet" href="./public/lib/splide-4.1.3/dist/css/splide.min.css">
 </head>
 
 <body>
@@ -173,13 +175,210 @@
         </section>
 
         <!-- Banner -->
-         <section class="py-5 px-4 home__banner">
+        <section class="py-5 px-4 home__banner">
             <div class="mw--1440 text-center py-4">
                 <h3 class="text--md text--white inter-semibold">OPERACIONES DE COMERCIO EXTERIOR</h3>
-                <h2 class="text--xl text--white inter-bold my-5">MÁS <span class="text--yellow">ÁGILES Y EFICIENTES</span></h2>
+                <h2 class="text--xl text--white inter-bold my-5">MÁS <span class="text--yellow">ÁGILES Y
+                        EFICIENTES</span></h2>
                 <a href="#" class="btn btn-warning btn--rounded px-5 py-2">CONTÁCTANOS</a>
             </div>
-         </section>
+        </section>
+
+        <!-- Preguntas frecuentes -->
+        <section class="mw--1440 py-5 px-4">
+            <header class="text-center">
+                <h2 class="text--lg text-uppercase">Preguntas <span class="text--yellow">frecuentes</span></h2>
+            </header>
+            <main class="grid--2cols gap--24">
+                <!-- Columna 1 -->
+                <div class="accordion accordion__faq" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ¿Cómo puedo solicitar una cotización?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p>A través de nuestro formulario en el apartado de “Contacto”, llamándonos al 55 5250
+                                    4814 o enviándonos un correo electrónico a ventas@sdicointer.com.mx . Estaremos a tu
+                                    disposición para tender tu solicitud y proporcionarte nuestros costos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                ¿Ofrecen soporte postventa?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p>
+                                    Sí, brindamos los siguientes servicios sin costo:
+                                <ul>
+                                    <li>
+                                        Soporte Técnico: Para la resolución de dudas operativas, así como para la
+                                        implementación de nuevos sistemas y reposiciones, además de asesoría en el
+                                        cumplimiento de requisitos técnicos.
+                                    </li>
+                                    <li>
+                                        Consultoría: Para la resolución de dudas legislativas, validación de criterios
+                                        normativos y aclaración de cualquier duda relacionada con el uso de los
+                                        sistemas.
+                                    </li>
+                                </ul>
+                                Puedes contactarnos en soporte@sdicointer.com.mx y consultoria@sdicointer.com.mx
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                ¿Cuáles son sus horarios de atención?
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p>
+                                    De lunes a viernes de 09:00 am a 06:00 pm. Durante este tiempo, nuestro equipo está
+                                    disponible para responder cualquier duda o solicitud
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="accordion accordion__faq" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                ¿Cuál es la modalidad de venta del servicio?
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p>
+                                    El servicio se comercializa por usuarios y se puede contratar en modalidad semestral
+                                    o anual. Solicita una cotización en ventas@sdicointer.com.mx
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                ¿Ofrecen soporte postventa?
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p>
+                                    Puedes realizarlo a través de una llamada telefónica al número 5552504814 o
+                                    enviándonos un correo electrónico a cobranza@sdicointer.com.mx . Nuestro equipo
+                                    estará disponible para guiarte y asegurarse de que la renovación se complete de
+                                    manera rápida y eficiente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text--md mb-3">Mi pregunta no está aquí</h2>
+                        <a href="#" class="btn btn-warning btn--rounded">Contáctanos</a>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <!-- Clientes -->
+        <section class="mw--1440 section__clientes py-5 px-4">
+            <header class="text-center">
+                <h2 class="text--lg text-white ">Lo que nuestros clientes opinan</h2>
+            </header>
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide text-center">
+                            <header class="py-4">
+                                <img src="./public/img/home/cliente1.png" alt="imagen del ciente 1"
+                                    class="w-100 mw--240">
+                            </header>
+                            <main class="text--sm text-white py-4">
+                                <p>Diaenlinea Premium es una gran herramienta que nos ha permitido tener en una sola
+                                    consulta toda la información que requerimos para nuestros productos de importación,
+                                    impuestos, restricciones, preferencias arancelarias conforme a los tratados, normas
+                                    en fin en
+                                    una sola consulta toda la información detallada, así como a tener un registro con
+                                    esta
+                                    información de nuestros productos.
+                                </p>
+                                <p>
+                                    También ha sido un gran apoyo en la consulta de leyes en torno al comercio exterior.
+                                    En
+                                    resumen, una gran herramienta para nuestro departamento de comercio exterior.
+                                </p>
+                            </main>
+                            <footer class="d-flex justify-content-center align-items-center">
+                                <h3 class="text--md text-white">Sistemas contratados:</h3>
+                                <img src="./public/img/home/sis1.png" alt="sistema 1" width="166" height="39"
+                                    class="mx-2">
+                            </footer>
+
+                        </li>
+                        <li class="splide__slide text-center">
+                            <header class="py-4">
+                                <img src="./public/img/home/cliente2.png" alt="imagen del ciente 1"
+                                    class="w-100 mw--240">
+                            </header>
+                            <main class="text--sm text-white py-4 grid--2cols gap--24 text-start">
+                                <div>
+                                    <p>
+                                        Ventajas del servicio:
+                                    </p>
+                                    <ol>
+                                        <li>La disponibilidad de la información en cualquier momento.</li>
+                                        <li>Nos permite realizar una comparación eficiente de la información en la base
+                                            de datos contra lo que se extrae.</li>
+                                        <li>El formato de entrega de información permite ahorro de tiempo para la
+                                             verificación de información.</li>
+                                        <li>Al identificar diferencias con la información extraída podemos analizar los
+                                            errores en la base de producción.</li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    <p>
+                                        Beneficios adicionales:
+                                    </p>
+                                    <ul>
+                                        <li>Consideramos que su fuentes son confiables y seguras.</li>
+                                        <li>El servicio puede ajustarse a nuestras necesidades al incluir nuevas bases.
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        En resumen, el  servicio ayuda a agilizará el proceso de verificación y
+                                        precisión de información, asegurando un cumplimiento normativo continuo.
+                                    </p>
+                                </div>
+                            </main>
+                            <footer class="d-flex justify-content-center align-items-center">
+                                <h3 class="text--md text-white">Sistemas contratados:</h3>
+                                <img src="./public/img/home/sis1.png" alt="sistema 1" width="166" height="39"
+                                    class="mx-2">
+                            </footer>
+                        </li>
+                        <li class="splide__slide">Slide 03</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -194,6 +393,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <script src="./public/lib/splide-4.1.3/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                pagination: false,
+            });
+            splide.mount();
+        });
+    </script>
 </body>
 
 </html>

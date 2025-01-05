@@ -1,4 +1,4 @@
-.hero > img {
+.hero>img {
     min-height: 400px;
     object-fit: cover;
 }
@@ -7,4 +7,42 @@
     background-image: url('/public/img/home/banner.png');
     background-size: cover;
     background-position: center;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+}
+
+.accordion__faq>.accordion-item {
+    border: none !important;
+
+}
+
+.accordion__faq>.accordion-item>.accordion-header>button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600 !important;
+    color: #000 !important;
+    font-size: var(--text-md);
+}
+
+.accordion__faq>.accordion-item>.accordion-header>.accordion-button {
+    box-shadow: none !important;
+}
+
+.section__clientes {
+    background: rgb(255, 191, 85);
+    background: linear-gradient(0deg, rgba(255, 191, 85, 1) 0%, rgba(45, 75, 180, 1) 100%);
+}
+
+.section__clientes > .splide > .splide__track {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section__clientes .splide__arrow {
+    background-color: transparent;
+}
+
+.section__clientes .splide__arrow svg {
+    fill: #fff !important;
 }

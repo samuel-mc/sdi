@@ -3,7 +3,7 @@
     --light-blue: #E2EFFF;
     
     --grey: #637381;
-    --light-grey: #D4D2E3;
+    --light-grey: #F9F8F7;
     --white-input: #F9F9FF;
     
     --dark-blue: #081642;
@@ -110,6 +110,11 @@ a {
 .bg--white-input {
     background-color: var(--white-input);
 }
+
+.bg--lightGrey {
+    background-color: var(--light-grey);
+}
+
 .btn {
     border-radius: 10px;
     padding: 2% 5%;
@@ -206,6 +211,11 @@ a {
 
 .w--480 {
     width: 480px;
+}
+
+.mw--240 {
+    max-width: 240px;
+    margin: 0 auto;
 }
 
 .mw--280 {
