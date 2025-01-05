@@ -35,7 +35,7 @@
 }
 
 .section__clientes > .splide > .splide__track {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -45,4 +45,15 @@
 
 .section__clientes .splide__arrow svg {
     fill: #fff !important;
+}
+
+.list--2cols {
+    column-count: 2; /* Divide en dos columnas */
+    column-gap: 20px; /* Espaciado entre columnas */
+}
+
+@media (max-width: 768px) {
+    .section__clientes > .splide > .splide__track {
+        width: 100%;
+    }
 }
