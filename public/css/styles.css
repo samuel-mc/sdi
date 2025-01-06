@@ -34,7 +34,7 @@
     background: linear-gradient(0deg, rgba(255, 191, 85, 1) 0%, rgba(45, 75, 180, 1) 100%);
 }
 
-.section__clientes > .splide > .splide__track {
+.section__clientes>.splide>.splide__track {
     width: 60%;
     margin: 0 auto;
 }
@@ -48,12 +48,21 @@
 }
 
 .list--2cols {
-    column-count: 2; /* Divide en dos columnas */
-    column-gap: 20px; /* Espaciado entre columnas */
+    column-count: 2;
+    /* Divide en dos columnas */
+    column-gap: 20px;
+    /* Espaciado entre columnas */
+}
+
+.footer--gradient {
+    height: 52px;
+    width: 100%;
+    background: rgb(255, 191, 85);
+    background: linear-gradient(270deg, rgba(255, 191, 85, 1) 71%, rgba(45, 75, 180, 1) 91%);
 }
 
 @media (max-width: 768px) {
-    .section__clientes > .splide > .splide__track {
+    .section__clientes>.splide>.splide__track {
         width: 100%;
     }
 }
