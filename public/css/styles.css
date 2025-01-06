@@ -78,6 +78,23 @@
     text-align: center;
 }
 
+.section__sistemas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__sistemas > div {
+    width: 25%;
+}
+
+.sistema__card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 48px;
+    border-radius: 16px;
+    align-content: center;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .section__clientes>.splide>.splide__track {
         width: 100%;

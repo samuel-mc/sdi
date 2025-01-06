@@ -17,3 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error('Error al cargar el footer:', error));
 });
+
+// Cargar form_cotizacion.html en el div con id "form_cotizacion" si existe
+const formCotizacion = document.getElementById('formCotizacion');
+if (formCotizacion) {
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch('form_cotizacion.html')
+            .then(response => response.text())
+            .then(data => {
+                formCotizacion.innerHTML = data;
+            })
+            .catch(error => console.error('Error al cargar el formulario de cotización:', error));
+    });
+}
