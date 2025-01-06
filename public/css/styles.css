@@ -61,6 +61,23 @@
     background: linear-gradient(270deg, rgba(255, 191, 85, 1) 71%, rgba(45, 75, 180, 1) 91%);
 }
 
+.container__reconocimentos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+.container__reconocimentos >  div {
+    width: 30%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 12px 32px;
+    border-radius: 16px;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .section__clientes>.splide>.splide__track {
         width: 100%;

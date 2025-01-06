@@ -61,6 +61,11 @@
     color: var(--grey);
 }
 
+.text--blue {
+    color: var(--blue);
+}
+
+
 .text--dark-blue {
     color: var(--dark-blue);
 }
@@ -158,6 +163,18 @@ a {
 .btn--white:hover {
     background-color: var(--dark-blue) !important;
     color: white !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn--transparent {
+    background-color: transparent !important;
+    color: var(--yellow) !important;
+    border: 1px solid var(--yellow) !important;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.btn--transparent:hover {
+    background-color: rgba(227, 146, 40, 0.3) !important;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -362,6 +379,10 @@ a {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+}
+
+.ul--yellow > li::marker {
+    color: var(--yellow);
 }
 
 @media (max-width: 1400px) {
