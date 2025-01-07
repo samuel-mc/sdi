@@ -8,6 +8,7 @@
     
     --dark-blue: #081642;
     --blue: #3636D8;
+    --medium-blue: #3DA4D0;
     --yellow: #E39228;
 
     --text-xs: 12px;
@@ -65,6 +66,9 @@
     color: var(--blue);
 }
 
+.text--mediumBlue {
+    color: var(--medium-blue);
+}
 
 .text--dark-blue {
     color: var(--dark-blue);
