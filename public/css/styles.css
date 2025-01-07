@@ -79,12 +79,9 @@
 }
 
 .section__sistemas {
-    display: flex;
-    justify-content: space-between;
-}
-
-.section__sistemas > div {
-    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 120px;
 }
 
 .sistema__card {
@@ -95,8 +92,32 @@
     text-align: center;
 }
 
+@media (max-width: 992px) {
+    .section__sistemas {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .section__sistemas > div:first-child {
+        grid-column: span 2;
+        text-align: center !important;
+    }
+}
+
 @media (max-width: 768px) {
     .section__clientes>.splide>.splide__track {
         width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .section__sistemas {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .section__sistemas > div:first-child {
+        grid-column: span 1;
+        text-align: center !important;
     }
 }
