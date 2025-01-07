@@ -108,6 +108,10 @@
     .section__clientes>.splide>.splide__track {
         width: 100%;
     }
+
+    .container__reconocimentos >  div {
+        width: 45%;
+    }
 }
 
 @media (max-width: 520px) {
@@ -119,5 +123,9 @@
     .section__sistemas > div:first-child {
         grid-column: span 1;
         text-align: center !important;
+    }
+
+    .container__reconocimentos >  div {
+        width: 100%;
     }
 }
