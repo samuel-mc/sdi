@@ -15,6 +15,7 @@
 
 .accordion__faq>.accordion-item {
     border: none !important;
+    background-color: transparent !important;
 
 }
 
