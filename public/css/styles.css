@@ -28,6 +28,22 @@
 .accordion__faq>.accordion-item>.accordion-header>.accordion-button {
     box-shadow: none !important;
 }
+.accordion__faq__gray>.accordion-item>.accordion-header>.accordion-button.collapsed {
+    background-color: var(--light-grey) !important; /* Fondo gris oscuro colapsado */
+}
+
+.accordion__faq__gray>.accordion-item>.accordion-header>.accordion-button:not(.collapsed) {
+    background-color: var(--light-grey) !important; /* Fondo gris oscuro o diferente al colapsado */
+}
+
+.accordion__faq>.accordion-item>.accordion-header>.accordion-button.collapsed::after {
+    color: var(--medium-blue) !important; /* Color de la flecha para el estado colapsado */
+
+}
+
+.accordion__faq>.accordion-item>.accordion-header>.accordion-button:not(.collapsed)::after {
+    color: var(--medium-blue) !important; /* Color de la flecha para el estado abierto */
+}
 
 .section__clientes {
     background: rgb(255, 191, 85);
