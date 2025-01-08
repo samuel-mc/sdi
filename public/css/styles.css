@@ -84,6 +84,11 @@
     gap: 120px;
 }
 
+button.sistema__card {
+    border: none;
+    background: white;
+}
+
 .sistema__card {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 48px;

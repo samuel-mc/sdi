@@ -11,7 +11,6 @@
       <ul class="d-flex list-unstyled mont-bold align-items-center m-0">
         <li><a href="#" class="text-uppercase a--black text--md mx-2">Inicio</a></li>
         <li><a href="./about.html" class="text-uppercase a--black text--md mx-2">Quiénes somos</a></li>
-        <!-- <li><a href="#" class="text-uppercase a--black text--md mx-2">Productos</a></li> -->
         <li class="nav-item dropdown">
           <a class="dropdown-toggle text-uppercase a--black text--md mx-2" href="#" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">
@@ -27,10 +26,11 @@
           </ul>
         </li>
         <li><a href="#" class="text-uppercase a--black text--md mx-2">Blog</a></li>
-        <li><a href="#" class="text-uppercase a--black text--md mx-2" data-bs-toggle="modal"
+        <li><a style="cursor: pointer;" class="text-uppercase a--black text--md mx-2" data-bs-toggle="modal"
             data-bs-target="#exampleModal">Contacto</a></li>
-        <li><a class="text-uppercase a--black text--md mx-2"><img src="./public/img/header/download.png" alt="download"
-              width="16" height="16"></a></li>
+        <li><a style="cursor: pointer;" class="text-uppercase a--black text--md mx-2" data-bs-toggle="modal"
+            data-bs-target="#modalDescargas"><img src="./public/img/header/download.png" alt="download" width="16"
+              height="16"></a></li>
       </ul>
     </nav>
   </div>
@@ -63,14 +63,14 @@
         </ul>
         <a class="nav-link" href="#">Blog</a>
         <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Contacto</a>
-        <a class="nav-link" href="#"><img src="./public/img/header/download.png" alt="download" width="16"
-            height="16"></a>
+        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalDescargas"><img
+            src="./public/img/header/download.png" alt="download" width="16" height="16"></a>
       </div>
     </div>
   </div>
 </nav>
 
-<!-- Modal -->
+<!-- Modal contacto -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
@@ -114,15 +114,59 @@
           <div class="my-3 d-flex justify-content-center align-items-center">
             <img src="./public/img//header/phone.png" alt="phone" class="me-2">
             <div>
-              <a href="tel:+5552504814" class="a--dark-blue inter-bold text--md">55-5250-4814</a> <span class="mx-2">ó</span>
+              <a href="tel:+5552504814" class="a--dark-blue inter-bold text--md">55-5250-4814</a> <span
+                class="mx-2">ó</span>
               <a href="tel:+5552628720" class="a--dark-blue inter-bold text--md">55-5262-8720</a>
             </div>
           </div>
         </main>
         <footer class="text-center">
-          <p class="text--sm text--dark-blue">Horario de atención de <span class="fw-bold">lunes a viernes de 9:00 am a 6:00 pm.</span></p>
+          <p class="text--sm text--dark-blue">Horario de atención de <span class="fw-bold">lunes a viernes de 9:00 am a
+              6:00 pm.</span></p>
           <img src="./public/img/header/infinito.png" alt="">
         </footer>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal descargas -->
+<div class="modal fade" id="modalDescargas" tabindex="-1" aria-labelledby="modalDescargasLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body px-4 py-5">
+        <div class="d-flex justify-content-center">
+          <img src="./public/img/header/download_lg.png" alt="icono descarga">
+          <div>
+            <h2 class="mont-regular">DESCARGA DE <span class="fw-bold">ACTUALIZACIONES</span></h2>
+          </div>
+        </div>
+        <div class="my-4">
+          <form action="">
+            <input type="text" class="form-control my-3" placeholder="Nombre de usuario">
+            <input type="text" class="form-control my-3" placeholder="Escribe tu contraseña">
+          </form>
+        </div>
+        <div>
+          <h3 class="text--sm text-center mont-regular mb-4">Selecciona un sistema</h3>
+          <div class="grid--2cols gap-4">
+            <button class="sistema__card">
+              <img src="./public/img/home/sol1.png" alt="sistema 1" width="55.93" height="58.67">
+            </button>
+            <button class="sistema__card">
+              <img src="./public/img/home/sol5.png" alt="sistema 5" width="71.3" height="33.39">
+            </button>
+            <button class="sistema__card">
+              <img src="./public/img/home/sol3.png" alt="sistema 3" width="71.55" height="42.25">
+            </button>
+            <button class="sistema__card">
+              <img src="./public/img/home/sol4.png" alt="sistema 4" width="56.75" height="57.13">
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
