@@ -173,6 +173,18 @@ a {
     transition: background-color 0.3s ease-in-out;
 }
 
+.btn--mediumBlue {
+    background-color: white !important;
+    color: var(--medium-blue) !important;
+    border: 1px solid var(--medium-blue) !important;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.btn--mediumBlue:hover {
+    background-color: var(--dark-blue) !important;
+    color: white !important;
+    transition: background-color 0.3s ease-in-out;
+}
 .btn--transparent {
     background-color: transparent !important;
     color: var(--yellow) !important;
