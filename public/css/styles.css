@@ -2,7 +2,12 @@
     min-height: 400px;
     object-fit: cover;
 }
+.hero--contacto>img {
+    min-height: 25px;
+    object-fit: cover;
+}
 
+.home__bann
 .home__banner {
     background-image: url('/public/img/home/banner.png');
     background-size: cover;
@@ -36,14 +41,6 @@
     background-color: var(--light-grey) !important; /* Fondo gris oscuro o diferente al colapsado */
 }
 
-.accordion__faq>.accordion-item>.accordion-header>.accordion-button.collapsed::after {
-    color: var(--medium-blue) !important; /* Color de la flecha para el estado colapsado */
-
-}
-
-.accordion__faq>.accordion-item>.accordion-header>.accordion-button:not(.collapsed)::after {
-    color: var(--medium-blue) !important; /* Color de la flecha para el estado abierto */
-}
 
 .section__clientes {
     background: rgb(255, 191, 85);
@@ -108,10 +105,8 @@
     text-align: center;
 }
 .nav-tabs .nav-link.active {
-    background-color: #007bff;
     color: black !important; 
     border: none;
-    border-bottom: 3px solid var(--medium-blue) !important;
     border-radius: 0;
 }
 
@@ -121,12 +116,98 @@
     transition: all 0.3s ease;
 }
 
-.nav-tabs .nav-link:hover {
-    color: var(--medium-blue); /* Texto negro al pasar el mouse */
+/************************** ESTILOS PAGINA DIA */
+.nav-tabs-sdi .nav-link.active {
+    background-color: var(--blue-sdi);
+    border-bottom: 3px solid var(--blue-sdi) !important;
 }
-ul li::marker {
-    color: var(--medium-blue);
-    font-size: 20px;
+.nav-tabs-sdi .nav-link:hover {
+    color: var(--blue-sdi); /* Texto negro al pasar el mouse */
+}
+.ul-sdi li::marker {
+    color: var(--blue-sdi);
+}
+.accordion__faq>.accordion-item>.accordion-header>.accordion-button.collapsed::after {
+    color: var(--blue-sdi) !important; /* Color de la flecha para el estado colapsado */
+
+}
+.accordion__faq>.accordion-item>.accordion-header>.accordion-button:not(.collapsed)::after {
+    color: var(--blue-dia) !important; /* Color de la flecha para el estado abierto */
+}
+
+
+/************************** ESTILOS PAGINA COA */
+.nav-tabs-coa .nav-link.active {
+    background-color: var(--green-coa);
+    border-bottom: 3px solid var(--green-coa) !important;
+}
+.nav-tabs-coa .nav-link:hover {
+    color: var(--green-coa); /* Texto negro al pasar el mouse */
+}
+.ul-coa li::marker {
+    color: var(--green-coa);
+}
+.accordion__faq>.accordion-item>.accordion-header>.accordion-button.collapsed::after {
+    color: var(--green-coa) !important; /* Color de la flecha para el estado colapsado */
+
+}
+.accordion__faq>.accordion-item>.accordion-header>.accordion-button:not(.collapsed)::after {
+    color: var(--green-coa) !important; /* Color de la flecha para el estado abierto */
+}
+
+/************************** ESTILOS PAGINA DIAENLINEA */
+.nav-tabs-diaenlinea .nav-link.active {
+    background-color: var(--green-diaenlinea);
+    border-bottom: 3px solid var(--green-diaenlinea) !important;
+}
+.nav-tabs-diaenlinea .nav-link:hover {
+    color: var(--green-diaenlinea); /* Texto negro al pasar el mouse */
+}
+.ul-diaenlinea li::marker {
+    color: var(--green-diaenlinea);
+}
+.accordion__faq>.accordion-item>.accordion-header>.accordion-button.collapsed::after {
+    color: var(--green-diaenlinea) !important; /* Color de la flecha para el estado colapsado */
+
+}
+.accordion__faq>.accordion-item>.accordion-header>.accordion-button:not(.collapsed)::after {
+    color: var(--green-diaenlinea) !important; /* Color de la flecha para el estado abierto */
+}
+/************************** ESTILOS PAGINA SITA */
+.nav-tabs-sita .nav-link.active {
+    background-color: var(--orange-sita);
+    border-bottom: 3px solid var(--orange-sita) !important;
+}
+.nav-tabs-sita .nav-link:hover {
+    color: var(--orange-sita); /* Texto negro al pasar el mouse */
+}
+.ul-sita li::marker {
+    color: var(--orange-sita);
+}
+.accordion__faq>.accordion-item>.accordion-header>.accordion-button.collapsed::after {
+    color: var(--orange-sita) !important; /* Color de la flecha para el estado colapsado */
+
+}
+.accordion__faq>.accordion-item>.accordion-header>.accordion-button:not(.collapsed)::after {
+    color: var(--orange-sita) !important; /* Color de la flecha para el estado abierto */
+}
+/************************** ESTILOS PAGINA SDI */
+.nav-tabs-dia .nav-link.active {
+    background-color: var(--blue-dia);
+    border-bottom: 3px solid var(--blue-dia) !important;
+}
+.nav-tabs-dia .nav-link:hover {
+    color: var(--blue-dia); /* Texto negro al pasar el mouse */
+}
+.ul-dia li::marker {
+    color: var(--blue-dia);
+}
+.accordion__faq>.accordion-item>.accordion-header>.accordion-button.collapsed::after {
+    color: var(--blue-dia) !important; /* Color de la flecha para el estado colapsado */
+
+}
+.accordion__faq>.accordion-item>.accordion-header>.accordion-button:not(.collapsed)::after {
+    color: var(--blue-dia) !important; /* Color de la flecha para el estado abierto */
 }
 
 @media (max-width: 992px) {
